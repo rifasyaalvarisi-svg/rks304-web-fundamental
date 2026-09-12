@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Ripasha Alvarisi Lirawanda</title>
+  <meta name="description" content="Hubungi Ripasha Alvarisi Lirawanda.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav" aria-label="Navigasi utama">
+      <a class="brand" href="index.html">Ripasha<span>.</span></a>
+      <ul class="nav-list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+
+    <section class="section page-head">
+      <h1>Hubungi Saya</h1>
+      <p class="bio">
+        Silakan isi formulir di bawah ini. Saya akan membalas melalui email
+        secepatnya.
+      </p>
+    </section>
+
+    <section class="section" aria-labelledby="form-title">
+      <h2 id="form-title" class="sr-only">Formulir Kontak</h2>
+
+      <form class="form" action="#" method="post">
+        <div class="form-row">
+          <div class="field">
+            <label for="nama">Nama Lengkap <span class="req">*</span></label>
+            <input type="text" id="nama" name="nama" required
+                   autocomplete="name" placeholder="Nama kamu">
+          </div>
+
+          <div class="field">
+            <label for="email">Alamat Email <span class="req">*</span></label>
+            <input type="email" id="email" name="email" required
+                   autocomplete="email" placeholder="nama@email.com">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="kategori">Kategori / Keperluan <span class="req">*</span></label>
+          <select id="kategori" name="kategori" required>
+            <option value="" selected disabled>— Pilih salah satu —</option>
+            <option value="konsultasi">Konsultasi</option>
+            <option value="kolaborasi">Kolaborasi Proyek</option>
+            <option value="umum">Pertanyaan Umum</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="subjek">Subjek</label>
+          <input type="text" id="subjek" name="subjek" placeholder="Ringkasan singkat">
+        </div>
+
+        <div class="field">
+          <label for="pesan">Pesan <span class="req">*</span></label>
+          <textarea id="pesan" name="pesan" rows="5" required
+                    placeholder="Tulis pesanmu di sini..."></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Kirim Pesan</button>
+      </form>
+
+      <aside class="contact-aside">
+        <h2>Kontak Lain</h2>
+        <address>
+          <ul class="contact-list">
+            <li>Email: <a href="mailto:rifasyaalvarisi@gmail.com">rifasyaalvarisi@gmail.com</a></li>
+            <li>GitHub: <a href="https://github.com/rifasyaalvarisi-svg" target="_blank" rel="noopener">rifasyaalvarisi-svg</a></li>
+            <li>Instagram: <a href="https://instagram.com/rpsyaalvrsi" target="_blank" rel="noopener">@rpsyaalvrsi</a></li>
+            <li>Lokasi: Batam, Indonesia</li>
+          </ul>
+        </address>
+      </aside>
+
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; 2026 Ripasha Alvarisi Lirawanda</p>
+    <address class="footer-contact">
+      <a href="mailto:rifasyaalvarisi@gmail.com">rifasyaalvarisi@gmail.com</a> ·
+      <a href="https://github.com/rifasyaalvarisi-svg" target="_blank" rel="noopener">github.com/rifasyaalvarisi-svg</a> ·
+      <a href="https://instagram.com/rpsyaalvrsi" target="_blank" rel="noopener">@rpsyaalvrsi</a>
+    </address>
+  </footer>
+
+</body>
+</html>
