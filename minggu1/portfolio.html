@@ -4,127 +4,125 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Portfolio — Ripasha Alvarisi Lirawanda</title>
-  <meta name="description" content="Kumpulan proyek dan sertifikat Ripasha Alvarisi Lirawanda.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <header class="site-header">
-    <nav class="nav" aria-label="Navigasi utama">
-      <a class="brand" href="index.html">Ripasha<span>.</span></a>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="portfolio.html" aria-current="page">Portfolio</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
+  <header class="topbar">
+    <a class="brand" href="index.html">Ripasha Alvarisi</a>
+    <nav class="topnav" aria-label="Navigasi">
+      <a href="index.html">Home</a>
+      <a href="portfolio.html" aria-current="page">Portfolio</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
-  <main id="main">
+  <main>
 
-    <section class="section page-head">
-      <h1>Portfolio</h1>
-      <p class="bio">
+    <section class="sec sec-page">
+      <header class="sec-head">
+        <span class="num">00</span>
+        <span class="dash">—</span>
+        <span class="label">Portfolio</span>
+      </header>
+
+      <h1 class="page-title">Kumpulan karya</h1>
+      <p class="page-lede">
         Proyek-proyek yang saya kerjakan selama menempuh pendidikan di
         Politeknik Negeri Batam. Sebagian besar dikerjakan bersama tim.
       </p>
     </section>
 
-    <!-- ===== PROYEK ===== -->
-    <section class="section" aria-labelledby="proyek-title">
-      <h2 id="proyek-title" class="sr-only">Daftar Proyek</h2>
+    <!-- 01 · PROYEK -->
+    <section class="sec">
+      <header class="sec-head">
+        <span class="num">01</span>
+        <span class="dash">—</span>
+        <span class="label">Proyek Kuliah</span>
+      </header>
 
-      <div class="grid">
+      <ol class="projects">
 
-        <!-- Proyek Semester 1 -->
-        <article class="card">
-          <div class="card-body">
-            <p class="card-tag">Semester 1 · Proyek Tim</p>
-            <h3>Permission File Checker</h3>
-            <p>
-              Aplikasi berbasis terminal yang berfungsi untuk memeriksa hak
-              akses file pada sebuah folder. Pengguna dapat melihat dan
-              mengubah permission file, membuat backup, serta memberikan
-              password pada file tertentu.
-            </p>
-            <ul class="badges badges-sm">
-              <li>Linux</li>
-              <li>Python</li>
-              <li>Shell</li>
-            </ul>
-            <p class="card-links">
-              <a href="https://github.com/rifasyaalvarisi-svg" target="_blank" rel="noopener">Repositori →</a>
-            </p>
+        <li class="project">
+          <div class="project-top">
+            <span class="project-idx">01</span>
+            <h3 class="project-title">File Permission Checker</h3>
+            <span class="project-year">2025</span>
           </div>
-        </article>
-
-        <!-- Proyek Semester 2 -->
-        <article class="card">
-          <div class="card-body">
-            <p class="card-tag">Semester 2 · Proyek Tim</p>
-            <h3>SecureNet Monitoring</h3>
-            <p>
-              Sistem monitoring berbasis virtual machine yang dibangun di
-              atas 3 VM: 2 Windows sebagai client dan 1 Ubuntu sebagai
-              server. Server memantau aktivitas client dan mengirim
-              notifikasi otomatis melalui Telegram jika terdeteksi
-              aktivitas mencurigakan atau perubahan password oleh admin.
-            </p>
-            <ul class="badges badges-sm">
-              <li>Virtual Machine</li>
-              <li>Ubuntu Server</li>
-              <li>Windows</li>
-              <li>Telegram Bot</li>
-            </ul>
-            <p class="card-note">Proyek dikerjakan bersama tim. Source code tidak dipublikasikan.</p>
-          </div>
-        </article>
-
-        <!-- Proyek berikutnya -->
-        <article class="card card-soon">
-          <div class="card-body">
-            <p class="card-tag">Semester 3 · Sedang Dikerjakan</p>
-            <h3>Proyek Berikutnya</h3>
-            <p>
-              Proyek baru sedang dalam perencanaan. Bagian ini akan
-              diperbarui setelah proyek selesai.
-            </p>
-          </div>
-        </article>
-
-      </div>
-    </section>
-
-    <!-- ===== SERTIFIKAT ===== -->
-    <section class="section" aria-labelledby="sertifikat-title">
-      <h2 id="sertifikat-title">Sertifikat &amp; Pelatihan</h2>
-
-      <ul class="cert-list">
-
-        <li class="cert-item">
-          <div class="cert-info">
-            <h3>Cybersecurity Essentials</h3>
-            <p class="cert-meta">
-              Cisco Networking Academy · Politeknik Batam · 27 Januari 2026
-            </p>
-          </div>
-          <a class="cert-link"
-             href="https://www.credly.com/"
-             target="_blank" rel="noopener">Lihat Sertifikat →</a>
+          <p class="project-desc">
+            Aplikasi berbasis terminal untuk memeriksa hak akses file pada
+            sebuah folder. Pengguna dapat melihat dan mengubah permission
+            file, membuat backup, serta memberikan password pada file tertentu.
+          </p>
+          <p class="project-foot">
+            <span class="project-tags">Linux · Python · Shell</span>
+            <a class="project-link" href="https://github.com/rifasyaalvarisi-svg" target="_blank" rel="noopener">Repositori <span class="arrow">→</span></a>
+          </p>
         </li>
 
+        <li class="project">
+          <div class="project-top">
+            <span class="project-idx">02</span>
+            <h3 class="project-title">SecureNet Monitoring</h3>
+            <span class="project-year">2025</span>
+          </div>
+          <p class="project-desc">
+            Sistem monitoring berbasis virtual machine dengan 3 VM: 2 Windows
+            sebagai server dan client, 1 Ubuntu sebagai client. Server memantau aktivitas
+            client dan mengirim notifikasi Telegram jika terdeteksi aktivitas
+            mencurigakan atau perubahan password oleh admin.
+          </p>
+          <p class="project-foot">
+            <span class="project-tags">VM · Ubuntu Server · Windows · Telegram Bot</span>
+            <span class="project-note">Proyek tim · tidak dipublikasikan</span>
+          </p>
+        </li>
+
+        <li class="project project-upcoming">
+          <div class="project-top">
+            <span class="project-idx">03</span>
+            <h3 class="project-title">Proyek Berikutnya</h3>
+            <span class="project-year">2026</span>
+          </div>
+          <p class="project-desc">Sedang dalam perencanaan.</p>
+        </li>
+
+      </ol>
+    </section>
+
+    <!-- 02 · SERTIFIKASI -->
+    <section class="sec">
+      <header class="sec-head">
+        <span class="num">02</span>
+        <span class="dash">—</span>
+        <span class="label">Sertifikasi</span>
+      </header>
+
+      <ul class="cert">
+        <li class="cert-row">
+          <span class="cert-year">2026</span>
+          <div class="cert-body">
+            <h3>Cybersecurity Essentials</h3>
+            <p>Cisco Networking Academy · Politeknik Batam · 27 Januari 2026</p>
+          </div>
+          <span class="cert-mark">Verified</span>
+        </li>
       </ul>
     </section>
 
   </main>
 
-  <footer class="site-footer">
-    <p>&copy; 2026 Ripasha Alvarisi Lirawanda</p>
-    <address class="footer-contact">
-      <a href="mailto:rifasyaalvarisi@gmail.com">rifasyaalvarisi@gmail.com</a> ·
-      <a href="https://github.com/rifasyaalvarisi-svg" target="_blank" rel="noopener">github.com/rifasyaalvarisi-svg</a> ·
-      <a href="https://instagram.com/rpsyaalvrsi" target="_blank" rel="noopener">@rpsyaalvrsi</a>
-    </address>
+  <footer class="footer">
+    <span class="footer-name">Ripasha Alvarisi Lirawanda</span>
+    <nav class="footer-nav">
+      <a href="mailto:rifasyaalvarisi@gmail.com">Email</a>
+      <a href="https://github.com/rifasyaalvarisi-svg" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://instagram.com/rpsyaalvrsi" target="_blank" rel="noopener">Instagram</a>
+    </nav>
+    <span class="footer-year">© 2026</span>
   </footer>
 
 </body>
